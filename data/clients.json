@@ -1,0 +1,22 @@
+{
+   "clients": [
+      {
+         "image": "/images/scrollicon1.png"
+      },
+      {
+         "image": "/images/scrollicon2.png"
+      },
+      {
+         "image": "/images/scrollicon3.png"
+      },
+      {
+         "image": "/images/scrollicon5.png"
+      },
+      {
+         "image": "/images/scrollicon6.png"
+      },
+      {
+         "image": "/images/logo-client-7.png"
+      }
+   ]
+}

@@ -1,40 +1,17 @@
 <div class="section client-logo">
-        <div class="container">
-            <div class="row">
-<ul class="row client-active group owl-carousel">
-                <li class=" list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/scrollicon1.png"  alt="">
-                    </div>
-                </li>
-                <!-- end single team -->
-                <li class=" list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/scrollicon2.png"  alt="">
-                      
-                    </div>
-                </li>
-                <!-- end single team -->
-                <li class=" list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/scrollicon3.png" alt="">
-                       
-                    </div>
-                </li>
-                <!-- end single team -->
-                <li class=" list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/scrollicon5.png"  alt="">
-                       
-                    </div>
-                </li>
-                <!-- end single team -->
-                <li class=" list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/scrollicon6.png" alt="">
-                       
-                    </div>
-                </li>
+    <div class="container">
+        <div class="row">			
+			<ul class="row client-active group owl-carousel">
+				{{range .Site.Data.clients.clients }}
+					<li class=" list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+						<div class="single-team">
+							<img src="{{ .image }}"  alt="{{ .image }}">
+						</div>
+					</li>
+				
+				 
+				{{ end }}
+                
                 <!-- end single team -->
             </ul>
 			</div>
