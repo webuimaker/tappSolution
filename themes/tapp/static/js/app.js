@@ -120,7 +120,7 @@
             }
         });
 		
-		// team active
+		
         $('.client-active').owlCarousel({
             loop: true,
             margin: 30,

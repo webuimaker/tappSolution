@@ -1,0 +1,16 @@
+{
+   "testimonials": [
+      {
+         "comment": "Michael has an in-depth understanding of the Insurance Industry and his software solutions demonstrate this knowledge. TAPP is efficient and saves the entry person time as well as saving phone calls to request further information. He is innovative and provides solutions to problems, not just canned software. Well worth trying!!",
+		 "name": "Peggy Rubin",
+		 "post": "former Executive VP & COO at Columbian Mutual Life Insurance Company",
+		 "image": "/images/lanna-potter.jpg"
+      },
+	  {
+         "comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident repellendus, aut voluptate id ut velit obcaecati pariatur, ",
+		 "name": "Peggy Rubin",
+		 "post": "former Executive VP & COO at Columbian Mutual Life Insurance Company",
+		 "image": " "
+      }
+   ]
+}

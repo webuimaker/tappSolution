@@ -1,0 +1,24 @@
+{
+   "teams": [
+      {
+         "name": "Michael Potter",
+		 "post": "CEO",
+		 "image": "/images/michael-potter.jpg"
+      },
+	  {
+         "name": "Bill Dean",
+		 "post": "Legal Counsel",
+		 "image": "/images/bill-dean.jpg"
+      },
+	  {
+         "name": "Lanna Potter, CPA",
+		 "post": "Chief Operating Officer",
+		 "image": "/images/lanna-potter.jpg"
+      },
+	  {
+         "name": "Scott Jones",
+		 "post": "System Administrator",
+		 "image": "/images/scott-jones.jpg"
+      }
+   ]
+}

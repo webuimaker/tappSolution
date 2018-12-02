@@ -15,38 +15,17 @@
             <!-- end spacer -->
             <!-- end row -->
             <ul class="row team-active group owl-carousel">
-                <li class="list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
+				{{range .Site.Data.team.teams }}
+					<li class="list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
                     <div class="single-team">
-                        <img src="/images/michael-potter.jpg"  alt="michael-potter">
-                        <h4>Michael Potter</h4>
-                        <h5>CEO</h5>
+                        <img src="{{ .image }}"  alt="{{ .name }}">
+                        <h4>{{ .name }}</h4>
+                        <h5> {{ .post }}</h5>
                     </div>
                 </li>
                 <!-- end single team -->
-				 <li class="list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/bill-dean.jpg"  alt="michael-potter">
-                        <h4>Michael Potter</h4>
-                        <h5>CEO</h5>
-                    </div>
-                </li>
-                <!-- end single team -->
-				 <li class="list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/lanna-potter.jpg"  alt="michael-potter">
-                        <h4>Michael Potter</h4>
-                        <h5>CEO</h5>
-                    </div>
-                </li>
-                <!-- end single team -->
-				 <li class="list-group-item animation" data-animation="fadeInUp" data-animation-delay="0.1s">
-                    <div class="single-team">
-                        <img src="/images/scott-jones.jpg"  alt="michael-potter">
-                        <h4>Michael Potter</h4>
-                        <h5>CEO</h5>
-                    </div>
-                </li>
-                <!-- end single team -->
+			{{ end }}
+			
 				
                 
             </ul>
