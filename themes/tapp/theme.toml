@@ -3,9 +3,7 @@
 
 name = "Tapp"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
 description = "Tapp Solution"
-homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41"
@@ -14,8 +12,3 @@ min_version = "0.41"
   name = "Vivek"
   homepage = ""
 
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

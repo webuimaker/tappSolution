@@ -1,0 +1,9 @@
+weight: 2
+title: "Second Banner"
+description: >
+  <p>Insurance Agents</p>		
+  <p>Use <strong> Our App To Sell</strong> Policies.</p>
+buttonText: "Join Them"
+buttonUrl: "#"
+image: "/images/mac.png/"
+bannerBg: "/images/banner-bg.png"

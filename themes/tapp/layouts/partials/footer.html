@@ -1,9 +1,8 @@
-
 <footer >
 	<div class="footer-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-12 col  align-self-center">	
+				<div class="offset-md-2 col-md-8  col-sm-12 align-self-center">	
 					<ul class="footer-link">
 						{{ range .Site.Menus.footernav }}
 							<li>
@@ -19,8 +18,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12 col-12 col">
-					TAPP SOLUTIONS, LLC. COPYRIGHT 2018. ALL RIGHTS RESERVED.
-					
+					{{ .Site.Params.copyright}}
 				</div> 
 				<div class="col-lg-6 col-md-12 col-12 col">
 					<ul class="social-media">
@@ -29,49 +27,13 @@
 							  <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
 							</li>
 						  {{ end }}
-						
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </footer>
-
-
-
-    <!-- jquery  scripts -->
-    <script src="/js/jquery-2.2.4.min.js"></script>
-    <!-- poper js -->
-    <script src="/js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- jquery waypoints -->
-    <script src="/js/waypoints.min.js"></script>
-    <!-- end paralax -->
-    <script src="/js/skrollr.min.js"></script>
-    <!-- youtube background -->
-    <script src="/js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- jquery coundown -->
-    <script src="/js/jquery.countdown.min.js"></script>
-    <!-- jquery counter up -->
-    <script src="/js/jquery.counterup.min.js"></script>
-    <!-- jquery magnify popup -->
-    <script src="/js/jquery.magnific-popup.min.js"></script>
-    <!-- jquery scoll up -->
-    <script src="/js/jquery.scrollUp.min.js"></script>
-    <!-- jquey owl carsole -->
-    <script src="/js/owl.carousel.min.js"></script>
-    <!-- jquery paartcile js -->
-    <script src="/js/particles.min.js"></script>
-    <!-- jquey title js -->
-    <script src="/js/tilt.jquery.min.js"></script>
-    <!-- jquery slider range -->
-    <script src="/js/slider-range.js"></script>
-	<!-- map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7CQl6fRhagGok6CzFGOOPne2X1u1spoA"></script>
-    <script src="/js/map.js"></script>
-    <!-- app js -->
-    <script src="/js/app.js"></script>
+{{- partial "js.html" . -}}
 
 
 </body>

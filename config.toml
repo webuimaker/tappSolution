@@ -1,11 +1,10 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site "
+baseURL = "/"
+languageCode = " "
+title = "Tapp Solutions"
 theme = "tapp"
 
-logo = "/images/tapp-logo.png"
-footercopyright = "copr texe"
-
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
 	
 [[menu.main]]
     name = "Home"
@@ -19,8 +18,6 @@ footercopyright = "copr texe"
     weight = 2
     identifier = "about"
 	
-	
-
 [[menu.main]]
     name = "About Sub 1"
     url = "/about-sub-1/"
@@ -44,8 +41,6 @@ footercopyright = "copr texe"
     weight = 3
     identifier = "product-services"
 	
-
-
 [[menu.main]]
     name = "product-services Sub 1"
     url = "/product-services-sub-1/"
@@ -142,5 +137,40 @@ footercopyright = "copr texe"
     pre = "<i class='fa fa-google-plus'></i>"
     url = "#"
     weight = 5
-
 	
+
+[params]
+    # Enable the contact form by entering your Formspree.io email
+    email = "webuimaker@gmail.com"
+	
+    copyright = "TAPP SOLUTIONS, LLC. COPYRIGHT 2018. ALL RIGHTS RESERVED. "	
+	logo = "/images/tapp-logo.png"
+	
+    
+	
+[params.about]
+    enable = true
+    title = "<span>About</span> Tapp Solutions"
+    subtitle = "<p>Tapp Solutions helps Life and P&C companies automate Sales, Claims and Inspections using Mobile Apps. Using our custom mobile applications, Insurance companies can sell higher quality policies faster,  collect payments anywhere, and complete more inspections with less work.</p>"
+    buttonText = "learn more"
+    buttonUrl = "#"
+
+[params.schedule]
+    enable = true
+    title = "Want to increase your sales with E-app?"
+    subtitle = "On Mobile And Desktop"
+    buttonText = "Schedule a phone call or demo"
+    buttonUrl = "#"
+
+[params.getInTouch]
+    enable = true
+    title = "<span>Get In </span>Touch"
+    subtitle = "We help agents sell policies faster and easier than ever before using mobile technology. "
+    email = "info@tappsolutions.com"
+    phone = "(+1) 404-618-0606"
+    location = "<p>3423 Piedmont RD NE Atlanta, GA 30305 USA</p>"
+	
+[params.freeTrial]
+    enable = true
+    buttonText = "Free Trial of Apps"
+    buttonUrl = "#"

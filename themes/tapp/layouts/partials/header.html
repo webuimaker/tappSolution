@@ -10,14 +10,14 @@
                     <div class="col-md-8">
                         <div class="top-contact">
                             <ul>
-                                <li> <a href="mailto:info@tappsolutions.com"><span><i class="fa fa-envelope"></i></span>info@tappsolutions.com</a></li>
+                                <li> <a href="mailto:{{ .Site.Params.getInTouch.email | safeHTML }}"><span><i class="fa fa-envelope"></i></span>{{ .Site.Params.getInTouch.email | safeHTML }}</a></li>
                             </ul>
                         </div>
                     </div><!-- end top contact -->
                     <div class="col-md-4">
                         <div class="top-social-icon">
                             <ul>
-                                <li><a href="tel:(+1)4046180606"><span><i class="fa fa-phone-square"></i></span> (+1) 404-618-0606
+                                <li><a href="tel:{{ .Site.Params.getInTouch.phone | safeHTML }}"><span><i class="fa fa-phone-square"></i> </span>{{ .Site.Params.getInTouch.phone | safeHTML }}
 								</a></li>
                             </ul>
                         </div>
@@ -31,7 +31,7 @@
                 <div class="col-lg-2  col-md-2  col-sm-4">
                     <div class="site-logo">
                         <a href="/">
-                            <img src="/images/tapp-logo.png" alt="{{.Site.Title}}">
+                            <img src="{{ .Site.Params.logo | safeHTML | absURL }}" alt="{{.Site.Title }}">
                         </a>
                     </div>
                 </div>
@@ -59,11 +59,11 @@
 									</li>
 								{{ else }}
 									<li><a href="{{ .URL | relLangURL }}"> {{ .Name }}</a> </li>
-									
-									
 								{{ end }}
 							{{end}}
-							<li><button class="btn-free">Free Trial of Apps</button></li>
+							{{ if .Site.Params.freeTrial.enable }}
+								<li><a class="btn-free" href="{{ .URL | relLangURL }}"> Free Trial of Apps </a> </li>
+							{{ end }}
                         </ul>
                     </div>
                     <!-- end menu markup -->

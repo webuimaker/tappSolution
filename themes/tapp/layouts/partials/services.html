@@ -3,31 +3,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-8 col-8 col animation" data-animation="slideInLeft" data-animation-delay="0.1s">
 					<div class="row">
-						<div class="col-md-6 services-box">
-							<img src="/images/icon-mobile.png" alt="service">
-							<h3 >TAPP Mobile E-App for Selling Policies</h3>
-							<p>Straight-through processing of insurance applications on mobile and desktops. Easy-to-use, online and offline</p>
-							<a href="#">Read More </a>
-						</div>
-						<div class="col-md-6 services-box">
-							<img src="/images/icon-product.png" alt="service">
-							<h3>Product Selector Mobile App For Selling Policies</h3>
-							<p>Interactive Mobile Life Insurance premium calculator, trusted by over 43,000 Agents and Professionals.</p>
-							<a href="#">Read More </a>
-						</div>
-						
-						<div class="col-md-6 services-box">
-							<img src="/images/icon-mobile.png" alt="service">
-							<h3 >Inspection Mobile App for P&C Claims</h3>
-							<p>Reduce significant costs and labor in Property claims processing with our easy-to-use mobile App. </p>
-							<a href="#">Read More </a>
-						</div>
-						<div class="col-md-6 services-box">
-							<img src="/images/software-con.png" alt="service">
-							<h3>Insurance Software Consulting Services</h3>
-							<p>DataMart, system integration, customized data processing software for life insurance policies, ALIS, and more</p>
-							<a href="#">Read More </a>
-						</div>
+						{{ range .Site.Data.services  }}
+							<div class="col-md-6 services-box">
+								<img src="{{ .image }}" alt="{{ .title }}">
+								<h3 >{{ .title }}</h3>
+								{{ .description | safeHTML }}
+								<a href="{{ .buttonUrl }}" >{{ .buttonText }}</a>
+							</div>
+						{{ end }}
 					</div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-4 col animation" data-animation="slideInRight" data-animation-delay="0.2s">
