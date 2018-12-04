@@ -40,6 +40,8 @@
 			 <div class="col-lg-6 col-md-12 col-12 col animation GetInBox contact-form" data-animation="slideInRight" data-animation-delay="0.2s">
 				
                         <form action="https://formspree.io/{{ .Site.Params.email }}" enctype="application/x-www-form-urlencoded" method="post" class="contact-form">
+						<input type="hidden" name="_next" value="/thanks/"/>
+
                             <div class="form-row">
 								<div class="col-md-5">
                                     <label>Your Name : </label>
